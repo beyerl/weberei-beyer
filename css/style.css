@@ -226,17 +226,41 @@ body {
     background-size: cover; }
     .header__carousel-item--1 {
       background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/art-cotton-crochet-2070676-lg.jpg); }
+      @media only screen and (max-width: 62em) {
+        .header__carousel-item--1 {
+          background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/art-cotton-crochet-2070676-md.jpg); } }
+      @media only screen and (max-width: 36em) {
+        .header__carousel-item--1 {
+          background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/art-cotton-crochet-2070676-sm.jpg); } }
     .header__carousel-item--2 {
       background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/cloth-colors-cotton-365067-lg.jpg); }
+      @media only screen and (max-width: 62em) {
+        .header__carousel-item--2 {
+          background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/cloth-colors-cotton-365067-md.jpg); } }
+      @media only screen and (max-width: 36em) {
+        .header__carousel-item--2 {
+          background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/cloth-colors-cotton-365067-sm.jpg); } }
     .header__carousel-item--3 {
       background-position: 0% 0%;
       background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/weaving-loom-2571179_1920-lg-edit.jpg); }
+      @media only screen and (max-width: 62em) {
+        .header__carousel-item--3 {
+          background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/weaving-loom-2571179_1280-md-edit.jpg); } }
+      @media only screen and (max-width: 36em) {
+        .header__carousel-item--3 {
+          background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/weaving-loom-2571179_640-sm-edit.jpg); } }
 
 .footer {
   color: #000; }
 
 .section-contact {
   background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.7), rgba(247, 247, 247, 0.7)), url(../assets/apparel-background-blue-235525-lg.jpg); }
+  @media only screen and (max-width: 62em) {
+    .section-contact {
+      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.7), rgba(247, 247, 247, 0.7)), url(../assets/apparel-background-blue-235525-md.jpg); } }
+  @media only screen and (max-width: 36em) {
+    .section-contact {
+      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.7), rgba(247, 247, 247, 0.7)), url(../assets/apparel-background-blue-235525-sm.jpg); } }
   .section-contact .composition {
     position: relative;
     height: 45rem; }

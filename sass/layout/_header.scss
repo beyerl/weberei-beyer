@@ -42,6 +42,22 @@
                 rgba($color-secondary, .5),
                 rgba($color-secondary-dark, .5)), 
                 url(../assets/art-cotton-crochet-2070676-lg.jpg);
+
+                @include media(md) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-secondary, .5),
+                        rgba($color-secondary-dark, .5)), 
+                        url(../assets/art-cotton-crochet-2070676-md.jpg);
+                }
+
+                @include media(xs) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-secondary, .5),
+                        rgba($color-secondary-dark, .5)), 
+                        url(../assets/art-cotton-crochet-2070676-sm.jpg);
+                }
         }
 
         &--2 {
@@ -50,6 +66,22 @@
                 rgba($color-secondary, .5),
                 rgba($color-secondary-dark, .5)), 
                 url(../assets/cloth-colors-cotton-365067-lg.jpg);
+
+                @include media(md) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-secondary, .5),
+                        rgba($color-secondary-dark, .5)), 
+                        url(../assets/cloth-colors-cotton-365067-md.jpg);
+                }
+
+                @include media(xs) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-secondary, .5),
+                        rgba($color-secondary-dark, .5)), 
+                        url(../assets/cloth-colors-cotton-365067-sm.jpg);
+                }
         }
 
         &--3 {
@@ -58,7 +90,23 @@
                 to right bottom,
                 rgba($color-secondary, .5),
                 rgba($color-secondary-dark, .5)), 
-                url(../assets/weaving-loom-2571179_1920-lg.jpg);
+                url(../assets/weaving-loom-2571179_1920-lg-edit.jpg);
+
+                @include media(md) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-secondary, .5),
+                        rgba($color-secondary-dark, .5)), 
+                        url(../assets/weaving-loom-2571179_1280-md-edit.jpg);
+                }
+
+                @include media(xs) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-secondary, .5),
+                        rgba($color-secondary-dark, .5)), 
+                        url(../assets/weaving-loom-2571179_640-sm-edit.jpg);
+                }
         }
     }
 }
