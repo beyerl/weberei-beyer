@@ -1,0 +1,56 @@
+.section-contact {
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light-2, .7),
+        rgba($color-grey-light-1, .7)), 
+        url(../assets/apparel-background-blue-235525-lg.jpg);
+
+
+    .composition {
+        position: relative;
+        height: 45rem;
+
+        @include media(xs){
+            position: static;
+            height: auto;   
+        }
+
+        &__googlemap {
+            height: 35rem; //mock
+            width: 55%; 
+            background-color: orangered; //mock
+            box-shadow: 0 3rem 6rem rgba($color-black, .1);
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+
+            @include media(xs){
+                position: static;
+                width: 100%;
+            }
+        }
+
+        &__address-box {
+            color: $color-white;
+            background-color: $color-secondary;
+            width: 55%;
+            padding: 4rem;
+            box-shadow: 0 3rem 6rem rgba($color-black, .1);
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            @include media(xs){
+                position: static;
+                width: 100%;
+            }
+        }
+
+
+    }
+}
+

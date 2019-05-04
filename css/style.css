@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat|Oswald");
+.u-center-text {
+  text-align: center !important; }
+
+.u-center-div-vertically {
+  margin-left: auto;
+  margin-right: auto; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 3rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.u-padding-top-medium {
+  padding-top: 3rem !important; }
+
+.u-padding-bottom-medium {
+  padding-bottom: 3rem !important; }
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 62em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  /* @include respond(tab-port) {
+        padding: 0;
+    }*/ }
+
+ul {
+  padding-inline-start: 4rem; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #000; }
+
+.heading-primary {
+  color: #fff; }
+  .heading-primary--main {
+    display: block;
+    font-size: 9.6rem;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 36em) {
+      .heading-primary--main {
+        font-size: 4.8rem; } }
+  .heading-primary--sub {
+    display: block;
+    font-size: 4.8rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 36em) {
+      .heading-primary--sub {
+        font-size: 2.4rem; } }
+
+.heading-secondary {
+  color: #003366;
+  background-color: #CCCCCC;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: .5rem;
+  margin: 0;
+  padding: 3rem;
+  text-transform: uppercase;
+  width: 100%; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.btn {
+  font-size: 1.6rem; }
+  .btn-primary {
+    background-color: #CCCC99;
+    border-color: #CCCC99;
+    padding: .5rem 2rem; }
+    .btn-primary:hover {
+      background-color: #adad84;
+      border-color: #adad84; }
+    .btn-primary:not(:disabled):not(.disabled):active {
+      background-color: #CCCC99;
+      border-color: #CCCC99; }
+  .btn-secondary {
+    background-color: #CCCCCC;
+    border-color: #CCCCCC;
+    padding: .5rem 2rem; }
+    .btn-secondary:hover {
+      background-color: #AAAAAA;
+      border-color: #AAAAAA; }
+    .btn-secondary:not(:disabled):not(.disabled):active {
+      background-color: #CCCCCC;
+      border-color: #CCCCCC; }
+
+.textbox--secondary {
+  color: #fff;
+  background-color: #003366;
+  padding: 3rem; }
+
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 1rem; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .story__shape {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none; } }
+
+.story__img {
+  width: 100%;
+  transform: translateY(0rem) scale(1);
+  backface-visibility: hidden;
+  transition: all .5s; }
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all .5s;
+  backface-visibility: hidden; }
+
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%); }
+
+.story:hover .story__img {
+  transform: translateY(0rem) scale(1.2);
+  filter: blur(3px) brightness(80%); }
+
+.header {
+  height: 85vh;
+  position: relative; }
+  @media only screen and (max-width: 36em) {
+    .header {
+      height: 30vh; } }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10; }
+    @media only screen and (max-width: 36em) {
+      .header__text-box {
+        width: 80%; } }
+  .header__carousel {
+    height: inherit;
+    width: 100%; }
+  .header__carousel-inner {
+    height: inherit;
+    width: 100%; }
+  .header__carousel-item {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover; }
+    .header__carousel-item--1 {
+      background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/art-cotton-crochet-2070676-lg.jpg); }
+    .header__carousel-item--2 {
+      background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/cloth-colors-cotton-365067-lg.jpg); }
+    .header__carousel-item--3 {
+      background-position: 0% 0%;
+      background-image: linear-gradient(to right bottom, rgba(0, 51, 102, 0.5), rgba(0, 26, 51, 0.5)), url(../assets/weaving-loom-2571179_1920-lg-edit.jpg); }
+
+.footer {
+  color: #000; }
+
+.section-contact {
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.7), rgba(247, 247, 247, 0.7)), url(../assets/apparel-background-blue-235525-lg.jpg); }
+  .section-contact .composition {
+    position: relative;
+    height: 45rem; }
+    @media only screen and (max-width: 36em) {
+      .section-contact .composition {
+        position: static;
+        height: auto; } }
+    .section-contact .composition__googlemap {
+      height: 35rem;
+      width: 55%;
+      background-color: orangered;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 10; }
+      @media only screen and (max-width: 36em) {
+        .section-contact .composition__googlemap {
+          position: static;
+          width: 100%; } }
+    .section-contact .composition__address-box {
+      color: #fff;
+      background-color: #003366;
+      width: 55%;
+      padding: 4rem;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      right: 0; }
+      @media only screen and (max-width: 36em) {
+        .section-contact .composition__address-box {
+          position: static;
+          width: 100%; } }
